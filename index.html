@@ -1,1 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Palak Bhuria | Creative Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --cream: #f8f1e8;
+    --paper: #fffaf4;
+    --pink: #e7a1ad;
+    --rose: #c96f80;
+    --burgundy: #651f35;
+    --wine: #421522;
+    --peach: #efb49b;
+    --charcoal: #292327;
+    --muted: #756b6e;
+    --line: rgba(101,31,53,.18);
+    --shadow: 0 25px 70px rgba(65,21,34,.12);
+}
+
+body.dark {
+    --cream: #21171b;
+    --paper: #2b1d22;
+    --pink: #d9899b;
+    --rose: #e09baa;
+    --burgundy: #f0bdc7;
+    --wine: #120b0e;
+    --peach: #d99b82;
+    --charcoal: #f8eee9;
+    --muted: #c5afb2;
+    --line: rgba(255,230,235,.16);
+    --shadow: 0 25px 70px rgba(0,0,0,.35);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cream);
+    color: var(--charcoal);
+    font-family: "DM Sans", sans-serif;
+    transition: background .5s ease, color .5s ease;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(1180px, 90%);
+    margin: auto;
+}
+
+/* NAVIGATION */
+
+nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1100px, 92%);
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 22px;
+
+    background: color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter: blur(18px);
+
+    border: 1px solid var(--line);
+    border-radius: 50px;
+
+    box-shadow: var(--shadow);
+}
+
+.logo {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--rose);
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.nav-links a {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: var(--rose);
+}
+
+.theme {
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--charcoal);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    padding: 170px 0 90px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+    color: var(--rose);
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(70px, 10vw, 145px);
+    line-height: .78;
+    font-weight: 600;
+}
+
+.hero h1 em {
+    display: block;
+    font-family: "Caveat", cursive;
+    color: var(--rose);
+    font-size: .65em;
+    font-weight: 500;
+    transform: rotate(-3deg);
+    margin-left: 80px;
+    margin-top: 15px;
+}
+
+.hero-text {
+    max-width: 530px;
+    margin-top: 35px;
+    color: var(--muted);
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 14px 24px;
+    border-radius: 40px;
+    border: 1px solid var(--burgundy);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: .3s;
+}
+
+.btn-primary {
+    background: var(--burgundy);
+    color: var(--paper);
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+}
+
+.hero-card {
+    position: relative;
+}
+
+.portrait {
+    height: 520px;
+    border-radius: 5px;
+    background:
+        linear-gradient(135deg, var(--pink), var(--peach));
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.portrait::after {
+    content: "PALAK";
+    position: absolute;
+    bottom: -25px;
+    left: 20px;
+    font-family: "Bodoni Moda", serif;
+    font-size: 105px;
+    color: rgba(255,255,255,.38);
+}
+
+.portrait-note {
+    position: absolute;
+    right: -35px;
+    top: 50px;
+    font-family: "Caveat", cursive;
+    font-size: 27px;
+    color: var(--burgundy);
+    transform: rotate(8deg);
+}
+
+.hero-number {
+    position: absolute;
+    bottom: -45px;
+    left: -45px;
+    font-family: "Bodoni Moda", serif;
+    font-size: 150px;
+    color: var(--pink);
+    opacity: .45;
+}
+
+/* MARQUEE */
+
+.marquee {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 18px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-track {
+    display: inline-block;
+    animation: move 22s linear infinite;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.marquee span {
+    margin: 0 30px;
+    color: var(--rose);
+}
+
+@keyframes move {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* SECTIONS */
+
+section {
+    padding: 120px 0;
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 65px;
+}
+
+.section-number {
+    font-family: "Bodoni Moda", serif;
+    font-size: 100px;
+    color: var(--pink);
+    line-height: .7;
+}
+
+.section-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(50px, 7vw, 90px);
+    line-height: .9;
+}
+
+.section-title em {
+    font-family: "Caveat", cursive;
+    color: var(--rose);
+}
+
+/* ABOUT */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-box {
+    padding: 45px;
+    background: var(--burgundy);
+    color: var(--paper);
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-box h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 55px;
+}
+
+.about-box p {
+    font-family: "Caveat", cursive;
+    font-size: 26px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+/* WORK */
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 480px;
+    margin-bottom: 80px;
+    background: var(--paper);
+    box-shadow: var(--shadow);
+}
+
+.project:nth-child(even) .project-image {
+    order: 2;
+}
+
+.project-image {
+    background: linear-gradient(135deg, var(--pink), var(--peach));
+    min-height: 480px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image::before {
+    content: "PROJECT";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.project-image::after {
+    content: "";
+    width: 220px;
+    height: 220px;
+    border: 1px solid rgba(255,255,255,.6);
+    border-radius: 50%;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+
+.project-info {
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-number {
+    font-family: "Bodoni Moda", serif;
+    color: var(--rose);
+    font-size: 70px;
+}
+
+.project-info h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 58px;
+    margin: 10px 0;
+}
+
+.project-type {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    color: var(--muted);
+}
+
+.project-info p {
+    color: var(--muted);
+    line-height: 1.8;
+    margin: 25px 0;
+}
+
+.stats {
+    display: flex;
+    gap: 35px;
+}
+
+.stat strong {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    color: var(--burgundy);
+}
+
+.stat small {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* THINK */
+
+.think {
+    background: var(--burgundy);
+    color: var(--paper);
+}
+
+.think .section-number {
+    color: var(--rose);
+}
+
+.think-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    border: 1px solid rgba(255,255,255,.2);
+}
+
+.think-item {
+    padding: 35px 20px;
+    border-right: 1px solid rgba(255,255,255,.2);
+    min-height: 190px;
+}
+
+.think-item span {
+    font-family: "Bodoni Moda", serif;
+    font-size: 35px;
+    color: var(--pink);
+}
+
+.think-item h4 {
+    margin: 25px 0 10px;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.think-item p {
+    color: rgba(255,255,255,.65);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* EXPERIENCE */
+
+.timeline {
+    border-left: 1px solid var(--line);
+    margin-left: 20px;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 0 70px 55px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 7px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--rose);
+}
+
+.timeline-year {
+    font-family: "Bodoni Moda", serif;
+    font-size: 18px;
+    color: var(--rose);
+}
+
+.timeline-item h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 43px;
+    margin: 5px 0;
+}
+
+.timeline-item p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* SKILLS */
+
+.skills-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.skill {
+    padding: 16px 23px;
+    border: 1px solid var(--line);
+    border-radius: 50px;
+    transition: .3s;
+    font-size: 13px;
+}
+
+.skill:hover {
+    background: var(--burgundy);
+    color: var(--paper);
+    transform: rotate(-2deg);
+}
+
+/* CHATBOT */
+
+.chat-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 1000;
+
+    background: var(--burgundy);
+    color: var(--paper);
+
+    border: none;
+    padding: 15px 21px;
+    border-radius: 50px;
+
+    font-family: "Caveat", cursive;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+
+.chat-box {
+    position: fixed;
+    right: 25px;
+    bottom: 85px;
+    width: 330px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+    padding: 25px;
+    z-index: 1000;
+    display: none;
+}
+
+.chat-box.active {
+    display: block;
+}
+
+.chat-box h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+}
+
+.chat-box p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 10px 0 20px;
+}
+
+.chat-question {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid var(--line);
+    margin-top: 7px;
+    cursor: pointer;
+    color: var(--charcoal);
+    font-family: inherit;
+}
+
+.chat-answer {
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+.contact h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(60px, 10vw, 130px);
+    line-height: .85;
+}
+
+.contact h2 span {
+    color: var(--rose);
+    font-family: "Caveat", cursive;
+}
+
+.contact p {
+    color: var(--muted);
+    margin: 30px auto;
+    max-width: 500px;
+    line-height: 1.8;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.socials a {
+    border-bottom: 1px solid var(--burgundy);
+    padding-bottom: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid var(--line);
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/* BACK TO TOP */
+
+.back-top {
+    position: fixed;
+    left: 25px;
+    bottom: 25px;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    color: var(--charcoal);
+    cursor: pointer;
+    z-index: 900;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-grid,
+    .about-grid,
+    .project {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 75px;
+    }
+
+    .hero h1 em {
+        margin-left: 30px;
+    }
+
+    .portrait {
+        height: 400px;
+    }
+
+    .project:nth-child(even) .project-image {
+        order: 0;
+    }
+
+    .think-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-head {
+        align-items: start;
+        gap: 20px;
+    }
+
+    .section-number {
+        font-size: 65px;
+    }
+
+    .project-info {
+        padding: 35px;
+    }
+
+    .project-info h3 {
+        font-size: 48px;
+    }
+
+    .chat-box {
+        right: 15px;
+        width: calc(100% - 30px);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <a href="#home" class="logo">PALAK<span>.</span></a>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <button class="theme" onclick="toggleTheme()" aria-label="Toggle theme">☼</button>
+</nav>
+
+
+<!-- HERO -->
+
+<main id="home">
+
+<section class="hero">
+    <div class="container hero-grid">
+
+        <div>
+            <div class="eyebrow">MBA · Digital Marketing × Operations</div>
+
+            <h1>
+                Hello,
+                <em>I'm Palak.</em>
+            </h1>
+
+            <p class="hero-text">
+                I blend creativity, strategy and business thinking to turn
+                ideas into meaningful brands, campaigns and outcomes.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#work" class="btn btn-primary">Explore my work</a>
+                <a href="#contact" class="btn">Let's connect</a>
+            </div>
+        </div>
+
+        <div class="hero-card">
+
+            <div class="portrait">
+                <!-- Replace this gradient with your photograph later -->
+            </div>
+
+            <div class="portrait-note">
+                a little creativity ♡
+            </div>
+
+            <div class="hero-number">01</div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- MARQUEE -->
+
+<div class="marquee">
+    <div class="marquee-track">
+        DIGITAL MARKETING <span>✦</span>
+        BRANDING <span>✦</span>
+        OPERATIONS <span>✦</span>
+        ANALYTICS <span>✦</span>
+        CREATIVE STRATEGY <span>✦</span>
+        DIGITAL MARKETING <span>✦</span>
+        BRANDING <span>✦</span>
+        OPERATIONS <span>✦</span>
+    </div>
+</div>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+    <div class="container">
+
+        <div class="section-head">
+            <div>
+                <div class="eyebrow">A little about me</div>
+                <h2 class="section-title">
+                    The person<br>
+                    <em>behind the work.</em>
+                </h2>
+            </div>
+
+            <div class="section-number">02</div>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-box">
+                <h3>Creative<br>mind.</h3>
+                <p>Strategic heart. Curious soul.</p>
+            </div>
+
+            <div class="about-text">
+                <p>
+                    I'm Palak Bhuria, an MBA student specializing in
+                    Digital Marketing and Operations.
+                </p>
+
+                <p>
+                    I enjoy working where creativity meets business —
+                    understanding people, building ideas, analysing results
+                    and improving how things work.
+                </p>
+
+                <p>
+                    From digital products and e-commerce projects to
+                    operations and quality processes, I like learning by
+                    actually building and doing.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- WORK -->
+
+<section id="work">
+    <div class="container">
+
+        <div class="section-head">
+            <div>
+                <div class="eyebrow">Selected work</div>
+                <h2 class="section-title">
+                    Things I've<br>
+                    <em>created.</em>
+                </h2>
+            </div>
+
+            <div class="section-number">03</div>
+        </div>
+
+
+        <!-- PROJECT 1 -->
+
+        <article class="project">
+
+            <div class="project-image">
+                <!-- Add Glow & Go screenshot/photo later -->
+            </div>
+
+            <div class="project-info">
+
+                <div class="project-number">01</div>
+
+                <div class="project-type">
+                    Digital Product · Branding · Marketing
+                </div>
+
+                <h3>Glow & Go</h3>
+
+                <p>
+                    A digital skincare product developed around audience
+                    needs, positioning and digital promotion.
+                </p>
+
+                <div class="stats">
+                    <div class="stat">
+                        <strong>₹10K+</strong>
+                        <small>Revenue</small>
+                    </div>
+
+                    <div class="stat">
+                        <strong>4%</strong>
+                        <small>Conversion</small>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- PROJECT 2 -->
+
+        <article class="project">
+
+            <div class="project-image">
+                <!-- Add Lemura Bags screenshot/photo later -->
+            </div>
+
+            <div class="project-info">
+
+                <div class="project-number">02</div>
+
+                <div class="project-type">
+                    E-Commerce · Digital Marketing
+                </div>
+
+                <h3>Lemura</h3>
+
+                <p>
+                    A Shopify e-commerce project focused on product
+                    presentation, customer journey and digital conversion.
+                </p>
+
+                <div class="stats">
+                    <div class="stat">
+                        <strong>₹11.25K</strong>
+                        <small>Sales</small>
+                    </div>
+
+                    <div class="stat">
+                        <strong>4.56%</strong>
+                        <small>Conversion</small>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- PROJECT 3 -->
+
+        <article class="project">
+
+            <div class="project-image">
+                <!-- Add dashboard screenshot later -->
+            </div>
+
+            <div class="project-info">
+
+                <div class="project-number">03</div>
+
+                <div class="project-type">
+                    Research · Analytics · Visualization
+                </div>
+
+                <h3>Life Expectancy</h3>
+
+                <p>
+                    Analysed World Bank and WHO data across 13 Asian
+                    countries using descriptive statistics, correlation,
+                    regression and forecasting.
+                </p>
+
+                <div class="stats">
+                    <div class="stat">
+                        <strong>13</strong>
+                        <small>Countries</small>
+                    </div>
+
+                    <div class="stat">
+                        <strong>5Y</strong>
+                        <small>Forecast</small>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+<!-- HOW I THINK -->
+
+<section class="think">
+    <div class="container">
+
+        <div class="section-head">
+            <div>
+                <div class="eyebrow">My approach</div>
+                <h2 class="section-title">
+                    How I<br>
+                    <em>think.</em>
+                </h2>
+            </div>
+
+            <div class="section-number">04</div>
+        </div>
+
+        <div class="think-grid">
+
+            <div class="think-item">
+                <span>01</span>
+                <h4>OBSERVE</h4>
+                <p>Understand the audience, problem and context.</p>
+            </div>
+
+            <div class="think-item">
+                <span>02</span>
+                <h4>UNDERSTAND</h4>
+                <p>Turn information into meaningful insights.</p>
+            </div>
+
+            <div class="think-item">
+                <span>03</span>
+                <h4>CREATE</h4>
+                <p>Build ideas that are useful and memorable.</p>
+            </div>
+
+            <div class="think-item">
+                <span>04</span>
+                <h4>MEASURE</h4>
+                <p>Look at results instead of relying on assumptions.</p>
+            </div>
+
+            <div class="think-item">
+                <span>05</span>
+                <h4>IMPROVE</h4>
+                <p>Learn, refine and make the next version better.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+    <div class="container">
+
+        <div class="section-head">
+            <div>
+                <div class="eyebrow">Where I've learned</div>
+                <h2 class="section-title">
+                    Experience<br>
+                    <em>& journey.</em>
+                </h2>
+            </div>
+
+            <div class="section-number">05</div>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-year">2026</div>
+                <h3>APJ Investments</h3>
+                <p>
+                    Operations Intern · Production Planning · Quality ·
+                    4M Change Management · ERP documentation
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2026</div>
+                <h3>Aspire Consultants</h3>
+                <p>
+                    Professional experience across business and marketing
+                    activities.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2026</div>
+                <h3>ATravelQ</h3>
+                <p>
+                    Digital Marketing Intern · SEO · Content · Digital
+                    marketing activities.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2025 — 2027</div>
+                <h3>MBA</h3>
+                <p>
+                    Lovely Professional University · Digital Marketing &
+                    Operations
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+    <div class="container">
+
+        <div class="section-head">
+            <div>
+                <div class="eyebrow">Things I work with</div>
+                <h2 class="section-title">
+                    My little<br>
+                    <em>toolbox.</em>
+                </h2>
+            </div>
+
+            <div class="section-number">06</div>
+        </div>
+
+        <div class="skills-wrap">
+
+            <div class="skill">Digital Marketing</div>
+            <div class="skill">SEO</div>
+            <div class="skill">Google Ads</div>
+            <div class="skill">Meta Ads</div>
+            <div class="skill">Google Analytics</div>
+            <div class="skill">MS Excel</div>
+            <div class="skill">Power BI</div>
+            <div class="skill">Power Query</div>
+            <div class="skill">DAX</div>
+            <div class="skill">SPSS</div>
+            <div class="skill">Canva</div>
+            <div class="skill">Figma</div>
+            <div class="skill">Shopify</div>
+            <div class="skill">Hostinger</div>
+            <div class="skill">Market Research</div>
+            <div class="skill">Branding</div>
+            <div class="skill">Operations</div>
+            <div class="skill">Quality</div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <div class="eyebrow">Let's create something</div>
+
+        <h2>
+            Have an idea?
+            <span>Let's talk.</span>
+        </h2>
+
+        <p>
+            Whether it's a project, opportunity or simply a conversation,
+            I'd love to hear from you.
+        </p>
+
+        <div class="socials">
+            <a href="mailto:your-email@example.com">Email</a>
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#">View CV</a>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- CHATBOT -->
+
+<button class="chat-button" onclick="toggleChat()">
+    ✦ Ask Palak
+</button>
+
+<div class="chat-box" id="chatBox">
+
+    <h3>Ask Palak ♡</h3>
+
+    <p>
+        Curious about my work, projects or experience?
+        Pick a question below.
+    </p>
+
+    <button class="chat-question"
+        onclick="answer('I specialise in Digital Marketing and Operations, with experience across branding, e-commerce, analytics, PPC, quality and process-related work.')">
+        What does Palak specialise in?
+    </button>
+
+    <button class="chat-question"
+        onclick="answer('Glow & Go was a digital skincare product project that generated ₹10K+ revenue with a 4% conversion rate.')">
+        Tell me about Glow & Go
+    </button>
+
+    <button class="chat-question"
+        onclick="answer('At APJ Investments, I worked around operations, production planning, quality processes, 4M change management and ERP documentation.')">
+        What did Palak do at APJ?
+    </button>
+
+    <button class="chat-question"
+        onclick="answer('You can connect with me through the contact section below. Email and LinkedIn are the best ways to reach me.')">
+        How can I contact Palak?
+    </button>
+
+    <div class="chat-answer" id="chatAnswer"></div>
+
+</div>
+
+
+<!-- BACK TO TOP -->
+
+<button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    ↑
+</button>
+
+
+<footer>
+    <div>© 2026 Palak Bhuria</div>
+    <div>Made with curiosity ♡</div>
+</footer>
+
+
+<script>
+
+function toggleTheme() {
+    document.body.classList.toggle("dark");
+
+    const button = document.querySelector(".theme");
+
+    if (document.body.classList.contains("dark")) {
+        button.textContent = "☾";
+        localStorage.setItem("theme", "dark");
+    } else {
+        button.textContent = "☼";
+        localStorage.setItem("theme", "light");
+    }
+}
+
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    document.querySelector(".theme").textContent = "☾";
+}
+
+function toggleChat() {
+    document.getElementById("chatBox").classList.toggle("active");
+}
+
+function answer(text) {
+    document.getElementById("chatAnswer").textContent = text;
+}
+
+</script>
+
+</body>
+</html>

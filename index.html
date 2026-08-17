@@ -48,6 +48,7 @@ a{color:inherit;text-decoration:none}
 button{font:inherit}
 ::selection{background:var(--rose);color:var(--wine)}
 .container{width:min(1160px,92%);margin:auto}
+
 .nav{
   position:fixed;z-index:50;top:24px;left:50%;transform:translateX(-50%);
   width:min(1080px,90%);background:color-mix(in srgb,var(--paper) 91%,transparent);
@@ -65,6 +66,7 @@ button{font:inherit}
   border-radius:50%;cursor:pointer;display:grid;place-items:center;font-size:18px;transition:.3s
 }
 .theme:hover{transform:rotate(20deg);background:var(--rose-soft)}
+
 .hero{min-height:100vh;padding:170px 0 80px;position:relative;overflow:hidden}
 .hero:before{
   content:"";position:absolute;width:600px;height:600px;border-radius:50%;
@@ -85,6 +87,7 @@ h1{font-family:"Bodoni Moda",serif;font-size:clamp(74px,11vw,150px);line-height:
 .btn.primary{background:var(--burgundy);color:#fff}
 .btn.secondary{background:transparent;color:var(--burgundy)}
 body.dark .btn.primary{color:#35151f}
+
 .visual{
   min-height:520px;position:relative;display:grid;place-items:center
 }
@@ -106,11 +109,13 @@ body.dark .btn.primary{color:#35151f}
 }
 .sticker.one{top:45px;right:0;transform:rotate(7deg)}
 .sticker.two{bottom:55px;left:0;transform:rotate(-8deg)}
+
 .section{padding:115px 0}
 .section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:55px}
 .section-no{font-family:"Bodoni Moda";font-size:86px;color:var(--rose);line-height:.7}
 .section-title{font-family:"Bodoni Moda";font-size:clamp(54px,7vw,88px);font-weight:500;margin:0}
 .section-intro{max-width:470px;color:var(--muted);line-height:1.8}
+
 .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
 .about-art{
   min-height:450px;border:1px solid var(--line);border-radius:40px;background:var(--rose-soft);
@@ -122,6 +127,7 @@ body.dark .btn.primary{color:#35151f}
 .about-text strong{color:var(--ink)}
 .fact-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
 .pill{border:1px solid var(--line);padding:10px 14px;border-radius:30px;font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+
 .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
 .folder{
   position:relative;min-height:330px;padding:28px;border:1px solid var(--line);border-radius:18px 24px 24px 24px;
@@ -138,6 +144,7 @@ body.dark .btn.primary{color:#35151f}
 .folder h3{font-family:"Playfair Display";font-weight:500;font-size:34px;line-height:1.05;max-width:460px;position:absolute;left:28px;bottom:65px;margin:0}
 .folder-meta{position:absolute;left:28px;bottom:27px;color:var(--burgundy);font-size:10px;letter-spacing:.16em;text-transform:uppercase}
 .folder-art{position:absolute;right:-45px;bottom:-80px;width:190px;height:190px;border:1px solid var(--line);border-radius:50%;opacity:.7}
+
 .experience{position:relative;border-left:1px solid var(--line);margin-left:20px;padding-left:55px}
 .timeline-item{position:relative;padding:0 0 60px}
 .timeline-item:before{content:"";position:absolute;left:-62px;top:7px;width:13px;height:13px;background:var(--rose);border-radius:50%;box-shadow:0 0 0 7px var(--cream)}
@@ -146,11 +153,13 @@ body.dark .btn.primary{color:#35151f}
 .timeline-item h4{margin:0 0 15px;color:var(--muted);font-weight:500}
 .timeline-item p{color:var(--muted);line-height:1.8;max-width:780px}
 .timeline-tags{display:flex;flex-wrap:wrap;gap:8px}
+
 .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
 .skill-box{border:1px solid var(--line);border-radius:25px;padding:30px;background:var(--paper)}
 .skill-box h3{font-family:"Playfair Display";font-size:28px;margin:0 0 22px}
 .skill-list{display:flex;flex-wrap:wrap;gap:10px}
 .skill{padding:11px 15px;background:var(--rose-soft);border-radius:30px;font-size:13px}
+
 .education{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .edu{
   min-height:270px;padding:28px;border:1px solid var(--line);border-radius:28px;background:var(--paper);
@@ -160,9 +169,11 @@ body.dark .btn.primary{color:#35151f}
 .edu-year{font-family:"Caveat";color:var(--burgundy);font-size:25px}
 .edu h3{font-family:"Playfair Display";font-size:25px;margin:25px 0 10px}
 .edu p{color:var(--muted);line-height:1.65;font-size:14px}
+
 .certs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .cert{border:1px solid var(--line);padding:25px;border-radius:22px;background:var(--paper);display:flex;justify-content:space-between}
 .cert span{color:var(--muted);font-size:13px}
+
 .contact{
   background:var(--burgundy);color:#fff;border-radius:45px;padding:70px;
   position:relative;overflow:hidden
@@ -171,9 +182,14 @@ body.dark .btn.primary{color:#35151f}
 .contact h2{font-family:"Bodoni Moda";font-size:clamp(55px,8vw,100px);font-weight:400;margin:0 0 15px}
 .contact p{max-width:610px;line-height:1.8;opacity:.85}
 .contact-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.contact-link{border:1px solid rgba(255,255,255,.35);padding:13px 17px;border-radius:40px;font-size:13px;transition:.3s}
+.contact-link{
+  border:1px solid rgba(255,255,255,.35);padding:13px 17px;border-radius:40px;
+  font-size:13px;transition:.3s;cursor:pointer
+}
 .contact-link:hover{background:#fff;color:var(--burgundy)}
+
 footer{padding:50px 0;color:var(--muted);display:flex;justify-content:space-between;gap:20px;font-size:13px}
+
 .backtop{
   position:fixed;z-index:40;left:28px;bottom:28px;width:46px;height:46px;border-radius:50%;
   background:var(--paper);border:1px solid var(--line);color:var(--ink);cursor:pointer;box-shadow:var(--shadow)
@@ -202,6 +218,7 @@ footer{padding:50px 0;color:var(--muted);display:flex;justify-content:space-betw
 .chat-input{display:flex;border-top:1px solid var(--line);padding:10px}
 .chat-input input{flex:1;border:0;background:transparent;color:var(--ink);outline:0;padding:8px}
 .chat-input button{border:0;background:var(--burgundy);color:#fff;border-radius:20px;padding:9px 14px;cursor:pointer}
+
 .modal{position:fixed;inset:0;z-index:70;background:rgba(35,20,26,.55);backdrop-filter:blur(10px);display:none;padding:30px;overflow:auto}
 .modal.open{display:grid;place-items:center}
 .modal-card{width:min(850px,100%);background:var(--paper);border:1px solid var(--line);border-radius:32px;padding:38px;position:relative;animation:modalIn .35s ease}
@@ -215,8 +232,16 @@ footer{padding:50px 0;color:var(--muted);display:flex;justify-content:space-betw
 .detail-box h4{margin:0 0 12px;color:var(--ink)}
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
 .reveal.show{opacity:1;transform:none}
-@keyframes pop{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:none}}
-@keyframes modalIn{from{opacity:0;transform:translateY(20px) scale(.98)}to{opacity:1;transform:none}}
+
+@keyframes pop{
+  from{opacity:0;transform:translateY(12px) scale(.97)}
+  to{opacity:1;transform:none}
+}
+@keyframes modalIn{
+  from{opacity:0;transform:translateY(20px) scale(.98)}
+  to{opacity:1;transform:none}
+}
+
 @media(max-width:850px){
   .navlinks{display:none}
   .hero-grid,.about-grid,.projects,.skills-grid,.education,.certs{grid-template-columns:1fr}
@@ -236,9 +261,16 @@ footer{padding:50px 0;color:var(--muted);display:flex;justify-content:space-betw
 
 /* ===== Signature portfolio interactions ===== */
 .navlinks a{position:relative}
-.navlinks a:after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:1px;background:var(--rose);transform:scaleX(0);transform-origin:center;transition:transform .25s ease}
+.navlinks a:after{
+  content:"";position:absolute;left:0;right:0;bottom:-7px;height:1px;
+  background:var(--rose);transform:scaleX(0);transform-origin:center;transition:transform .25s ease
+}
 .navlinks a:hover:after,.navlinks a.active:after{transform:scaleX(1)}
-button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s ease,background .28s ease,border-color .28s ease,box-shadow .28s ease,color .28s ease}
+
+button,a,.folder,.edu,.cert,.skill-box,.profile-card{
+  transition:transform .28s ease,background .28s ease,border-color .28s ease,box-shadow .28s ease,color .28s ease
+}
+
 .icon-dock{
   position:fixed;z-index:50;right:25px;top:50%;transform:translateY(-50%);
   display:flex;flex-direction:column;gap:9px;padding:8px;border:1px solid var(--line);
@@ -256,6 +288,7 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
   padding:8px 10px;border-radius:10px;opacity:0;pointer-events:none;transition:.2s
 }
 .dock-btn:hover[data-tip]::after{opacity:1}
+
 .quick-menu{
   position:fixed;z-index:49;right:84px;top:50%;transform:translateY(-50%) translateX(10px);
   opacity:0;pointer-events:none;padding:14px;background:var(--paper);border:1px solid var(--line);
@@ -264,6 +297,7 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
 .quick-menu.open{opacity:1;pointer-events:auto;transform:translateY(-50%) translateX(0)}
 .quick-menu a{display:block;text-decoration:none;color:var(--ink);padding:9px 10px;border-radius:10px;font-size:12px}
 .quick-menu a:hover{background:var(--rose-soft);color:var(--burgundy)}
+
 .current-note{
   position:fixed;z-index:42;left:24px;top:150px;width:190px;padding:16px 17px;
   background:var(--paper);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);
@@ -272,6 +306,7 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
 .current-note .mini-label{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--burgundy);margin-bottom:7px}
 .current-note strong{font:600 16px "Playfair Display";display:block;margin-bottom:5px}
 .current-note span{font-size:11px;color:var(--muted);line-height:1.45}
+
 .note-btn{
   position:fixed;z-index:50;left:25px;bottom:92px;width:48px;height:48px;border-radius:50%;
   background:var(--rose-soft);border:1px solid var(--line);color:var(--burgundy);cursor:pointer;
@@ -301,53 +336,81 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
 }
 .note-close:hover{transform:rotate(90deg);background:var(--rose-soft)}
 .note-pop.quote-change p{animation:noteQuoteIn .32s cubic-bezier(.22,1,.36,1)}
+
 @keyframes noteQuoteIn{
   from{opacity:0;transform:translateY(6px)}
   to{opacity:1;transform:translateY(0)}
 }
+
 .contact-float{
   position:fixed;z-index:50;right:25px;bottom:88px;width:48px;height:48px;border-radius:50%;
   background:var(--rose);border:1px solid var(--line);color:var(--wine);cursor:pointer;
   box-shadow:var(--shadow);font-size:18px
 }
 .contact-float:hover,.note-btn:hover{transform:translateY(-4px) rotate(2deg)}
+
 .journey-strip{
   display:flex;align-items:center;gap:0;margin-top:35px;border:1px solid var(--line);
   border-radius:25px;overflow:hidden;background:var(--paper)
 }
 .journey-step{flex:1;padding:16px 14px;text-align:center;position:relative}
-.journey-step:not(:last-child):after{content:"→";position:absolute;right:-7px;top:50%;transform:translateY(-50%);z-index:2;color:var(--burgundy);background:var(--paper);padding:0 2px}
+.journey-step:not(:last-child):after{
+  content:"→";position:absolute;right:-7px;top:50%;transform:translateY(-50%);
+  z-index:2;color:var(--burgundy);background:var(--paper);padding:0 2px
+}
 .journey-step b{display:block;font:600 17px "Playfair Display";margin-bottom:4px}
 .journey-step span{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
 .project-icon{position:absolute;right:24px;top:45px;font-size:25px;color:var(--burgundy);opacity:.75}
 .folder:hover .project-icon{transform:rotate(-8deg) scale(1.1)}
 .folder:focus-visible{outline:2px solid var(--burgundy);outline-offset:4px}
+
 .modal-card{max-height:90vh;overflow:auto}
-.modal-card::-webkit-scrollbar{width:7px}.modal-card::-webkit-scrollbar-thumb{background:var(--rose);border-radius:10px}
+.modal-card::-webkit-scrollbar{width:7px}
+.modal-card::-webkit-scrollbar-thumb{background:var(--rose);border-radius:10px}
+
 .modal-extra{
   margin-top:22px;padding:16px 18px;border-radius:18px;background:var(--rose-soft);
   color:var(--muted);font-size:12px;line-height:1.6
 }
+
 .cursor-dot,.cursor-ring{position:fixed;z-index:9999;pointer-events:none;display:block}
 .cursor-dot{width:6px;height:6px;border-radius:50%;background:var(--burgundy);transform:translate(-50%,-50%)}
-.cursor-ring{width:28px;height:28px;border:1px solid var(--rose);border-radius:50%;transform:translate(-50%,-50%);transition:width .18s,height .18s,border-color .18s}
+.cursor-ring{
+  width:28px;height:28px;border:1px solid var(--rose);border-radius:50%;
+  transform:translate(-50%,-50%);transition:width .18s,height .18s,border-color .18s
+}
 .cursor-ring.big{width:42px;height:42px;border-color:var(--burgundy)}
-@keyframes floatNote{0%,100%{transform:rotate(-2deg) translateY(0)}50%{transform:rotate(1deg) translateY(-7px)}}
+
+@keyframes floatNote{
+  0%,100%{transform:rotate(-2deg) translateY(0)}
+  50%{transform:rotate(1deg) translateY(-7px)}
+}
+
 @media(max-width:1000px){
   .current-note{display:none}.icon-dock{right:12px}.contact-float{right:13px}
 }
 @media(max-width:700px){
-  .icon-dock{top:auto;bottom:18px;right:50%;transform:translateX(50%);flex-direction:row;border-radius:25px}
-  .quick-menu{top:auto;bottom:76px;right:50%;transform:translateX(50%) translateY(8px)}
+  .icon-dock{
+    top:auto;bottom:18px;right:50%;transform:translateX(50%);
+    flex-direction:row;border-radius:25px
+  }
+  .quick-menu{
+    top:auto;bottom:76px;right:50%;
+    transform:translateX(50%) translateY(8px)
+  }
   .quick-menu.open{transform:translateX(50%) translateY(0)}
   .dock-btn[data-tip]::after{display:none}
-  .note-btn{left:14px;bottom:82px}.note-pop{left:14px;bottom:138px}
+  .note-btn{left:14px;bottom:82px}
+  .note-pop{left:14px;bottom:138px}
   .contact-float{right:14px;bottom:82px}
-  .journey-strip{overflow:auto}.journey-step{min-width:125px}
+  .journey-strip{overflow:auto}
+  .journey-step{min-width:125px}
   .cursor-dot,.cursor-ring{display:none}
 }
-@media(pointer:coarse){.cursor-dot,.cursor-ring{display:none}}
-
+@media(pointer:coarse){
+  .cursor-dot,.cursor-ring{display:none}
+}
 
 /* ===== Photo-ready visual placeholders ===== */
 .photo-placeholder{
@@ -388,11 +451,11 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
 .photo-journal .photo-placeholder{min-height:360px}
 .photo-journal .photo-stack{display:grid;gap:24px}
 .photo-journal .photo-stack .photo-placeholder{min-height:168px}
+
 @media(max-width:700px){
   .project-visuals,.photo-journal{grid-template-columns:1fr}
   .photo-journal .photo-stack{grid-template-columns:1fr}
 }
-
 
 /* ===== Elegant click transitions — no dragging scroll ===== */
 .page-transition{
@@ -417,6 +480,7 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
   line-height:1.2;opacity:.86;max-width:650px;
 }
 .section.focus-in{animation:sectionFocus .85s cubic-bezier(.22,1,.36,1) both}
+
 @keyframes pageWipe{
   0%{opacity:0;transform:scaleY(0)}
   28%{opacity:1;transform:scaleY(1)}
@@ -428,7 +492,6 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
   55%{opacity:1;transform:translateY(0) scale(1)}
   100%{opacity:1;transform:none}
 }
-
 </style>
 </head>
 
@@ -443,6 +506,7 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
 
 <nav class="nav">
   <a class="logo" href="#home">PALAK<span>.</span></a>
+
   <div class="navlinks">
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -451,6 +515,7 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
     <a href="#education">Education</a>
     <a href="#contact">Contact</a>
   </div>
+
   <button class="theme" id="themeBtn" aria-label="Toggle theme">☼</button>
 </nav>
 
@@ -481,14 +546,21 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
 
 <section class="hero" id="home">
   <div class="container hero-grid">
+
     <div class="reveal">
       <div class="eyebrow">MBA · Digital Marketing × Operations</div>
-      <h1>Hello,<span class="script">I'm Palak.</span></h1>
+
+      <h1>
+        Hello,
+        <span class="script">I'm Palak.</span>
+      </h1>
+
       <p class="hero-copy">
         I’m <strong>Palak Bhuria</strong>, an MBA student combining creative marketing,
         structured problem-solving and operations thinking. I enjoy turning ideas into
         clear brand experiences, practical strategies and measurable business outcomes.
       </p>
+
       <div class="cta-row">
         <a class="btn primary" href="#work">Explore My Work ↗</a>
         <a class="btn secondary" href="#contact">Let's Connect</a>
@@ -496,41 +568,53 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
     </div>
 
     <div class="visual reveal">
+
       <div class="sticker one">creative + strategic</div>
+
       <div class="profile-card">
         <div class="avatar">PB</div>
+
         <h3>Palak Bhuria</h3>
+
         <p>MBA · Digital Marketing & Operations</p>
+
         <div class="fact-row" style="justify-content:center">
           <span class="pill">Marketing</span>
           <span class="pill">Operations</span>
           <span class="pill">Analytics</span>
         </div>
       </div>
+
       <div class="sticker two">a little creativity ♡</div>
+
     </div>
+
   </div>
 </section>
 
 <section class="section" id="about">
   <div class="container">
+
     <div class="section-head reveal">
       <div>
         <div class="section-no">01</div>
         <h2 class="section-title">A little about me.</h2>
       </div>
+
       <p class="section-intro">
         Creative thinking meets business discipline — with a focus on ideas that are both visually compelling and commercially useful.
       </p>
     </div>
 
     <div class="about-grid">
+
       <div class="about-art reveal">
         <div class="big">PB</div>
         <div class="quote">“Ideas become valuable when they create impact.”</div>
       </div>
 
       <div class="about-text reveal">
+
         <p>
           I am pursuing an <strong>MBA in Digital Marketing & Operations at Lovely Professional University</strong>,
           with an academic and project background spanning marketing, branding, analytics, supply chain and operations.
@@ -555,49 +639,84 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
         </div>
 
         <div class="journey-strip" id="journey">
-          <div class="journey-step"><b>2021</b><span>Intermediate</span></div>
-          <div class="journey-step"><b>2022–25</b><span>B.Sc. Mathematics</span></div>
-          <div class="journey-step"><b>2025–27</b><span>MBA</span></div>
-          <div class="journey-step"><b>2026</b><span>APJ Internship</span></div>
-          <div class="journey-step"><b>Now</b><span>Creating & learning</span></div>
+
+          <div class="journey-step">
+            <b>2021</b>
+            <span>Intermediate</span>
+          </div>
+
+          <div class="journey-step">
+            <b>2022–25</b>
+            <span>B.Sc. Mathematics</span>
+          </div>
+
+          <div class="journey-step">
+            <b>2025–27</b>
+            <span>MBA</span>
+          </div>
+
+          <div class="journey-step">
+            <b>2026</b>
+            <span>APJ Internship</span>
+          </div>
+
+          <div class="journey-step">
+            <b>Now</b>
+            <span>Creating & learning</span>
+          </div>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
 </section>
 
 <section class="section" id="work">
   <div class="container">
+
     <div class="section-head reveal">
       <div>
         <div class="section-no">02</div>
         <h2 class="section-title">Things I've created.</h2>
       </div>
+
       <p class="section-intro">
         A curated collection of marketing, branding, analytics and operations projects. Click any folder to explore the work.
       </p>
     </div>
+
     <div class="projects" id="projects"></div>
+
   </div>
 </section>
 
 <section class="section" id="experience">
   <div class="container">
+
     <div class="section-head reveal">
       <div>
         <div class="section-no">03</div>
         <h2 class="section-title">Experience.</h2>
       </div>
+
       <p class="section-intro">
         My professional experience is grounded in production planning, quality processes, documentation and ERP-based operations.
       </p>
     </div>
 
     <div class="experience reveal">
+
       <div class="timeline-item">
+
         <div class="timeline-date">Jun 2026 — Jul 2026</div>
+
         <h3>APJ Investments Private Limited</h3>
+
         <h4>Operations Intern · Rudrapur, Uttarakhand</h4>
+
         <p>
           Updated production planning records, maintained 50+ ERP data records and managed documentation for smooth production flow.
           Processed 400+ 4M Change Management forms while supporting compliance with quality standards and manufacturing procedures.
@@ -610,18 +729,23 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
           <span class="pill">ERP Systems</span>
           <span class="pill">Microsoft Excel</span>
         </div>
+
       </div>
+
     </div>
+
   </div>
 </section>
 
 <section class="section" id="education">
   <div class="container">
+
     <div class="section-head reveal">
       <div>
         <div class="section-no">04</div>
         <h2 class="section-title">Education.</h2>
       </div>
+
       <p class="section-intro">
         An interdisciplinary academic journey combining business, marketing, operations and quantitative thinking.
       </p>
@@ -630,6 +754,7 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
     <div class="education">
 
       <div class="edu reveal">
+
         <div class="photo-placeholder edu-photo">
           <div>
             <div class="photo-mark">▧</div>
@@ -637,17 +762,22 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
             <span>Add photo later</span>
           </div>
         </div>
+
         <div class="edu-year">Aug 2025 — Present</div>
+
         <h3>Lovely Professional University</h3>
+
         <p>
           <strong>Master of Business Administration</strong><br>
           Digital Marketing & Operations<br>
           Phagwara, Punjab<br><br>
           <strong>8.12 CGPA</strong>
         </p>
+
       </div>
 
       <div class="edu reveal">
+
         <div class="photo-placeholder edu-photo">
           <div>
             <div class="photo-mark">▧</div>
@@ -655,16 +785,21 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
             <span>Add photo later</span>
           </div>
         </div>
+
         <div class="edu-year">Jun 2022 — Apr 2025</div>
+
         <h3>MCM DAV College</h3>
+
         <p>
           <strong>Bachelor of Science — Mathematics</strong><br>
           Kangra, H.P.<br><br>
           <strong>76.3%</strong>
         </p>
+
       </div>
 
       <div class="edu reveal">
+
         <div class="photo-placeholder edu-photo">
           <div>
             <div class="photo-mark">▧</div>
@@ -672,26 +807,33 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
             <span>Add photo later</span>
           </div>
         </div>
+
         <div class="edu-year">Aug 2021 — Aug 2022</div>
+
         <h3>D.A.V. Sr. Sec. Public School</h3>
+
         <p>
           <strong>Intermediate</strong><br>
           Dehra, H.P.<br><br>
           <strong>69%</strong>
         </p>
+
       </div>
 
     </div>
+
   </div>
 </section>
 
 <section class="section" id="skills">
   <div class="container">
+
     <div class="section-head reveal">
       <div>
         <div class="section-no">05</div>
         <h2 class="section-title">What I bring.</h2>
       </div>
+
       <p class="section-intro">
         A practical blend of tools, business skills and creative execution.
       </p>
@@ -700,7 +842,9 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
     <div class="skills-grid">
 
       <div class="skill-box reveal">
+
         <h3>Tools & Platforms</h3>
+
         <div class="skill-list">
           <span class="skill">MS Excel</span>
           <span class="skill">PowerPoint</span>
@@ -713,10 +857,13 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
           <span class="skill">Power BI</span>
           <span class="skill">Shopify</span>
         </div>
+
       </div>
 
       <div class="skill-box reveal">
+
         <h3>Power Skills</h3>
+
         <div class="skill-list">
           <span class="skill">Negotiation</span>
           <span class="skill">Adaptability</span>
@@ -726,25 +873,30 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
           <span class="skill">Communication</span>
           <span class="skill">Problem Solving</span>
         </div>
+
       </div>
 
     </div>
+
   </div>
 </section>
 
 <section class="section" id="certificates">
   <div class="container">
+
     <div class="section-head reveal">
       <div>
         <div class="section-no">06</div>
         <h2 class="section-title">Credentials.</h2>
       </div>
+
       <p class="section-intro">
         Selected certifications supporting my business and analytical toolkit.
       </p>
     </div>
 
     <div class="certs">
+
       <div class="cert reveal">
         <strong>Tally with GST</strong>
         <span>Tally Institute</span>
@@ -754,29 +906,39 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
         <strong>Microsoft Excel</strong>
         <span>Tally Institute</span>
       </div>
+
     </div>
 
     <div style="height:28px"></div>
 
     <div class="skill-box reveal">
+
       <h3>Beyond the classroom</h3>
+
       <p style="color:var(--muted);line-height:1.8">
+
         <strong>Volunteer · Verbal Juggernauts Champion</strong><br>
         May 2026 — Present<br><br>
+
         Supported the planning and execution of Verbal Combat 2026, coordinated participant registration and event flow,
         assisted with on-site logistics, and helped manage participants, judges and schedules.
+
       </p>
+
     </div>
+
   </div>
 </section>
 
 <section class="section" id="visuals">
   <div class="container">
+
     <div class="section-head reveal">
       <div>
         <div class="section-no">07</div>
         <h2 class="section-title">A visual side of me.</h2>
       </div>
+
       <p class="section-intro">
         A dedicated space for photographs from my projects, academic journey and personal story — ready to be added later.
       </p>
@@ -785,41 +947,52 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
     <div class="photo-journal">
 
       <div class="photo-placeholder reveal">
+
         <div>
           <div class="photo-mark">✦</div>
           <strong>Palak Bhuria</strong>
           <span>Add your main photo here later</span>
         </div>
+
       </div>
 
       <div class="photo-stack">
 
         <div class="photo-placeholder reveal">
+
           <div>
             <div class="photo-mark">⌁</div>
             <strong>Project Moments</strong>
             <span>Add project photos later</span>
           </div>
+
         </div>
 
         <div class="photo-placeholder reveal">
+
           <div>
             <div class="photo-mark">♡</div>
             <strong>Beyond the Portfolio</strong>
             <span>Add personal / college photos later</span>
           </div>
+
         </div>
 
       </div>
+
     </div>
+
   </div>
 </section>
 
 <section class="section" id="contact">
   <div class="container">
+
     <div class="contact reveal">
 
-      <div class="eyebrow" style="color:#f6c4ce">07 · CONTACT</div>
+      <div class="eyebrow" style="color:#f6c4ce">
+        07 · CONTACT
+      </div>
 
       <h2>Let's create something meaningful.</h2>
 
@@ -828,33 +1001,43 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
         I’d be happy to hear from you.
       </p>
 
-      <!-- CONTACT LINKS FIXED -->
+      <!-- ============================= -->
+      <!-- FIXED CONTACT LINKS -->
+      <!-- ============================= -->
+
       <div class="contact-links">
 
+        <!-- GMAIL -->
         <a
           class="contact-link"
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=bhuriapalak75@gmail.com"
+          href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=bhuriapalak75%40gmail.com&su=Portfolio%20Contact"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+          data-external-link="true">
           Email ↗
         </a>
 
+        <!-- PHONE -->
         <a
           class="contact-link"
           href="tel:+917807794958">
           +91 7807794958 ↗
         </a>
 
+        <!-- LINKEDIN -->
         <a
           class="contact-link"
           href="https://www.linkedin.com/in/palakbhuria/"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+          data-external-link="true">
           LinkedIn ↗
         </a>
 
       </div>
+
     </div>
+
   </div>
 </section>
 
@@ -870,18 +1053,27 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
 <button class="note-btn" id="noteBtn" aria-label="Open professional note">✎</button>
 
 <div class="note-pop" id="notePop" role="dialog" aria-label="Little note">
+
   <button class="note-close" id="noteClose" aria-label="Close note">×</button>
+
   <div class="mini-label">Little note</div>
-  <p id="noteText">Focused effort today creates stronger opportunities tomorrow.</p>
+
+  <p id="noteText">
+    Focused effort today creates stronger opportunities tomorrow.
+  </p>
+
 </div>
 
-<!-- FLOATING CONTACT BUTTON -->
-<button class="contact-float" id="contactFloat" aria-label="Go to contact">✉</button>
+<button class="contact-float" id="contactFloat" aria-label="Go to contact">
+  ✉
+</button>
 
 <div class="cursor-dot" id="cursorDot"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
-<button class="chat-toggle" id="chatToggle">✦ Ask Palak</button>
+<button class="chat-toggle" id="chatToggle">
+  ✦ Ask Palak
+</button>
 
 <div class="chat" id="chat">
 
@@ -891,21 +1083,41 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
   </div>
 
   <div class="messages" id="messages">
+
     <div class="msg bot">
       Hi! I’m Palak’s portfolio assistant. Ask me about her projects, experience, education, skills or contact details.
     </div>
+
   </div>
 
   <div class="chat-options">
-    <button class="chat-option" data-q="Tell me about Palak">About Palak</button>
-    <button class="chat-option" data-q="What projects has Palak done?">Projects</button>
-    <button class="chat-option" data-q="What is Palak's experience?">Experience</button>
-    <button class="chat-option" data-q="What are Palak's skills?">Skills</button>
+
+    <button class="chat-option" data-q="Tell me about Palak">
+      About Palak
+    </button>
+
+    <button class="chat-option" data-q="What projects has Palak done?">
+      Projects
+    </button>
+
+    <button class="chat-option" data-q="What is Palak's experience?">
+      Experience
+    </button>
+
+    <button class="chat-option" data-q="What are Palak's skills?">
+      Skills
+    </button>
+
   </div>
 
   <div class="chat-input">
+
     <input id="chatInput" placeholder="Ask something…">
-    <button id="chatSend">Send</button>
+
+    <button id="chatSend">
+      Send
+    </button>
+
   </div>
 
 </div>
@@ -927,13 +1139,19 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
     <div class="detail-grid">
 
       <div class="detail-box">
+
         <h4>What I did</h4>
+
         <ul id="modalBullets"></ul>
+
       </div>
 
       <div class="detail-box">
+
         <h4>Tools / Methods</h4>
+
         <div class="skill-list" id="modalTools"></div>
+
       </div>
 
     </div>
@@ -941,29 +1159,35 @@ button,a,.folder,.edu,.cert,.skill-box,.profile-card{transition:transform .28s e
     <div class="project-visuals">
 
       <div class="photo-placeholder">
+
         <div>
           <div class="photo-mark">▧</div>
           <strong>Project Visual 01</strong>
           <span>Add photo later</span>
         </div>
+
       </div>
 
       <div class="photo-placeholder">
+
         <div>
           <div class="photo-mark">▧</div>
           <strong>Project Visual 02</strong>
           <span>Add photo later</span>
         </div>
+
       </div>
 
     </div>
 
   </div>
+
 </div>
 
 <script>
 
 const projects=[
+
  {
   n:"01",
   icon:"◈",
@@ -1047,6 +1271,7 @@ const projects=[
   ],
   tools:["Microsoft Excel","PivotTables","Pivot Charts","Forecasting"]
  }
+
 ];
 
 const projectsEl=document.getElementById("projects");
@@ -1064,21 +1289,38 @@ projects.forEach(p=>{
   card.setAttribute("aria-label","Open project: "+p.title);
 
   card.innerHTML=`
+
     <div class="folder-number">${p.n}</div>
-    <div class="open">Open folder ↗</div>
-    <div class="project-icon">${p.icon}</div>
+
+    <div class="open">
+      Open folder ↗
+    </div>
+
+    <div class="project-icon">
+      ${p.icon}
+    </div>
+
     <h3>${p.title}</h3>
-    <div class="folder-meta">${p.category}</div>
+
+    <div class="folder-meta">
+      ${p.category}
+    </div>
+
     <div class="folder-art"></div>
   `;
 
   card.onclick=()=>openProject(p);
 
   card.onkeydown=e=>{
+
     if(e.key==="Enter"||e.key===" "){
+
       e.preventDefault();
+
       openProject(p);
+
     }
+
   };
 
   projectsEl.appendChild(card);
@@ -1104,6 +1346,7 @@ function openProject(p){
  document.getElementById("projectModal").classList.add("open");
 
  document.body.style.overflow="hidden";
+
 }
 
 function closeModal(){
@@ -1117,11 +1360,15 @@ function closeModal(){
 document.getElementById("modalClose").onclick=closeModal;
 
 document.getElementById("projectModal").onclick=e=>{
+
   if(e.target.id==="projectModal")closeModal();
+
 };
 
 document.addEventListener("keydown",e=>{
+
   if(e.key==="Escape")closeModal();
+
 });
 
 
@@ -1133,8 +1380,10 @@ if(localStorage.getItem("palak-theme")==="dark")
   document.body.classList.add("dark");
 
 function updateThemeIcon(){
+
   themeBtn.textContent=
     document.body.classList.contains("dark")?"☾":"☼";
+
 }
 
 updateThemeIcon();
@@ -1158,11 +1407,15 @@ themeBtn.onclick=()=>{
 const chat=document.getElementById("chat");
 
 document.getElementById("chatToggle").onclick=()=>{
+
   chat.classList.toggle("open");
+
 };
 
 document.getElementById("chatClose").onclick=()=>{
+
   chat.classList.remove("open");
+
 };
 
 function answer(q){
@@ -1170,24 +1423,31 @@ function answer(q){
  const x=q.toLowerCase();
 
  if(x.includes("project")||x.includes("work"))
+
    return "Palak has six featured projects: Lemura Bags, HP World Logistics & Supply Chain Analysis, Amul Supply Chain & Operations Analysis, Glow & Go, Rootsy — Brand the Unbranded, and Life Expectancy Patterns by Country.";
 
  if(x.includes("experience")||x.includes("intern"))
+
    return "Palak worked as an Operations Intern at APJ Investments Private Limited in Rudrapur, Uttarakhand, from June to July 2026. Her work included production planning, ERP records, 4M Change Management forms and quality inspections.";
 
  if(x.includes("skill"))
+
    return "Her toolkit includes MS Excel, PowerPoint, Google Sheets, Canva, Google Analytics, WordPress, Blogger, ERP Systems, Power BI and Shopify. Her power skills include leadership, teamwork, communication, negotiation, adaptability, selling and problem solving.";
 
  if(x.includes("education")||x.includes("study")||x.includes("mba"))
+
    return "Palak is pursuing an MBA in Digital Marketing & Operations at Lovely Professional University, with an 8.12 CGPA. She completed a B.Sc. in Mathematics from MCM DAV College with 76.3%.";
 
  if(x.includes("contact")||x.includes("email")||x.includes("linkedin"))
+
    return "You can contact Palak at bhuriapalak75@gmail.com, call +91 7807794958, or connect on LinkedIn at linkedin.com/in/palakbhuria.";
 
  if(x.includes("palak")||x.includes("about")||x.includes("who"))
+
    return "Palak Bhuria is an MBA student specializing in Digital Marketing & Operations. Her portfolio combines creative marketing, branding, analytics, supply chain and operations.";
 
  return "I can help with Palak’s projects, experience, education, skills or contact details. Try asking: “What projects has Palak done?”";
+
 }
 
 function addMessage(text,type){
@@ -1201,6 +1461,7 @@ function addMessage(text,type){
  document.getElementById("messages").appendChild(m);
 
  document.getElementById("messages").scrollTop=99999;
+
 }
 
 function send(){
@@ -1216,21 +1477,29 @@ function send(){
  input.value="";
 
  setTimeout(()=>{
+
    addMessage(answer(q),"bot");
+
  },250);
+
 }
 
 document.getElementById("chatSend").onclick=send;
 
 document.getElementById("chatInput").addEventListener("keydown",e=>{
+
   if(e.key==="Enter")send();
+
 });
 
 document.querySelectorAll(".chat-option").forEach(b=>{
 
  b.onclick=()=>{
+
    document.getElementById("chatInput").value=b.dataset.q;
+
    send();
+
  };
 
 });
@@ -1241,13 +1510,17 @@ document.querySelectorAll(".chat-option").forEach(b=>{
 const observer=new IntersectionObserver(entries=>{
 
  entries.forEach(e=>{
+
    if(e.isIntersecting)e.target.classList.add("show");
+
  });
 
 },{threshold:.12});
 
 document.querySelectorAll(".reveal").forEach(el=>{
+
   observer.observe(el);
+
 });
 
 
@@ -1265,366 +1538,4 @@ const transitionCopy={
 
  home:[
    "Home",
-   "Focused on learning, growing, and creating meaningful impact."
- ],
-
- about:[
-   "About",
-   "Driven by curiosity, discipline, and a mindset for continuous growth."
- ],
-
- work:[
-   "Work",
-   "Turning business ideas into practical results."
- ],
-
- experience:[
-   "Experience",
-   "Learning through responsibility, execution, and real-world challenges."
- ],
-
- education:[
-   "Education",
-   "Building knowledge today to create stronger opportunities tomorrow."
- ],
-
- skills:[
-   "Skills",
-   "Continuously strengthening the skills that drive professional growth."
- ],
-
- certificates:[
-   "Credentials",
-   "Every new skill is another step toward professional growth."
- ],
-
- visuals:[
-   "Visuals",
-   "Every experience adds perspective to the journey ahead."
- ],
-
- contact:[
-   "Let's Connect",
-   "Open to meaningful opportunities, conversations, and new possibilities."
- ]
-
-};
-
-function transitionTo(target){
-
- const el=typeof target==="string"
-   ?document.querySelector(target)
-   :target;
-
- if(!el || transitionBusy)return;
-
- const key=el.id || "home";
-
- const copy=transitionCopy[key] ||
-   [
-     "Palak Bhuria",
-     "Learning, growth, and meaningful business impact — together."
-   ];
-
- transitionTitle.textContent=copy[0];
-
- transitionQuote.textContent=copy[1];
-
- transitionBusy=true;
-
- pageTransition.classList.remove("go");
-
- void pageTransition.offsetWidth;
-
- pageTransition.classList.add("go");
-
- window.setTimeout(()=>{
-
-   window.scrollTo({
-     top:Math.max(
-       0,
-       el.getBoundingClientRect().top+
-       window.scrollY-18
-     ),
-     left:0,
-     behavior:"auto"
-   });
-
-   document.querySelectorAll(".section.focus-in")
-     .forEach(x=>x.classList.remove("focus-in"));
-
-   if(el.classList.contains("section")){
-
-     void el.offsetWidth;
-
-     el.classList.add("focus-in");
-
-   }
-
- },260);
-
- window.setTimeout(()=>{
-
-   pageTransition.classList.remove("go");
-
-   transitionBusy=false;
-
- },720);
-
-}
-
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-
- a.addEventListener("click",e=>{
-
-   const href=a.getAttribute("href");
-
-   const target=document.querySelector(href);
-
-   if(!target)return;
-
-   e.preventDefault();
-
-   history.replaceState(null,"",href);
-
-   transitionTo(target);
-
- });
-
-});
-
-
-/* QUICK MENU */
-
-const quickBtn=document.getElementById("quickBtn");
-
-const quickMenu=document.getElementById("quickMenu");
-
-quickBtn.onclick=()=>{
-  quickMenu.classList.toggle("open");
-};
-
-document.querySelectorAll(".quick-menu a").forEach(a=>{
-
- a.addEventListener("click",()=>{
-   quickMenu.classList.remove("open");
- });
-
-});
-
-
-/* JOURNEY */
-
-document.getElementById("journeyBtn").onclick=()=>{
-  transitionTo("#journey");
-};
-
-
-/* CONNECT BUTTON */
-
-document.getElementById("connectBtn").onclick=()=>{
-  transitionTo("#contact");
-};
-
-
-/* PROFESSIONAL NOTE */
-
-const noteBtn=document.getElementById("noteBtn");
-
-const notePop=document.getElementById("notePop");
-
-const noteClose=document.getElementById("noteClose");
-
-const noteText=document.getElementById("noteText");
-
-const notes=[
-
- "Focused effort today creates stronger opportunities tomorrow.",
-
- "Stay curious, keep learning, and let every experience move you forward.",
-
- "Progress is built through consistency, not perfection.",
-
- "Small improvements, repeated consistently, create meaningful results.",
-
- "Confidence grows when preparation meets opportunity.",
-
- "Keep learning. Keep adapting. Keep moving forward.",
-
- "Every challenge is an opportunity to become more capable.",
-
- "A clear goal, disciplined action, and a positive mindset can take you far.",
-
- "Build the skills today that create the opportunities you want tomorrow.",
-
- "Growth begins when you choose to keep going."
-
-];
-
-let noteIndex=0;
-
-function showNextNote(){
-
- noteIndex=(noteIndex+1)%notes.length;
-
- noteText.textContent=notes[noteIndex];
-
- notePop.classList.remove("quote-change");
-
- void notePop.offsetWidth;
-
- notePop.classList.add("quote-change");
-
-}
-
-noteBtn.onclick=()=>{
-
- if(!notePop.classList.contains("open")){
-
-   showNextNote();
-
-   notePop.classList.add("open");
-
- }else{
-
-   showNextNote();
-
- }
-
-};
-
-noteClose.onclick=(e)=>{
-
- e.stopPropagation();
-
- notePop.classList.remove("open");
-
-};
-
-document.addEventListener("keydown",e=>{
-
- if(e.key==="Escape")
-   notePop.classList.remove("open");
-
-});
-
-
-/* FLOATING CONTACT BUTTON — FIXED */
-
-document.getElementById("contactFloat").onclick=()=>{
-
- const contactSection=document.getElementById("contact");
-
- if(contactSection){
-
-   contactSection.scrollIntoView({
-     behavior:"smooth",
-     block:"start"
-   });
-
- }
-
-};
-
-
-/* QUICK MENU CLOSE */
-
-document.addEventListener("click",e=>{
-
- if(
-   !e.target.closest("#quickMenu") &&
-   !e.target.closest("#quickBtn")
- ){
-
-   quickMenu.classList.remove("open");
-
- }
-
-});
-
-
-/* CUSTOM CURSOR */
-
-const cursorDot=document.getElementById("cursorDot");
-
-const cursorRing=document.getElementById("cursorRing");
-
-if(window.matchMedia("(pointer:fine)").matches){
-
- window.addEventListener("mousemove",e=>{
-
-   cursorDot.style.left=e.clientX+"px";
-
-   cursorDot.style.top=e.clientY+"px";
-
-   cursorRing.style.left=e.clientX+"px";
-
-   cursorRing.style.top=e.clientY+"px";
-
- });
-
- document.querySelectorAll(
-   "a,button,.folder,.edu,.cert,.skill"
- ).forEach(el=>{
-
-   el.addEventListener("mouseenter",()=>{
-     cursorRing.classList.add("big");
-   });
-
-   el.addEventListener("mouseleave",()=>{
-     cursorRing.classList.remove("big");
-   });
-
- });
-
-}
-
-
-/* BACK TO TOP */
-
-document.getElementById("backTop").onclick=()=>{
-  transitionTo("#home");
-};
-
-
-/* ACTIVE SECTION INDICATOR */
-
-const navAnchors=[
-  ...document.querySelectorAll(".navlinks a")
-];
-
-const sections=[
-  ...document.querySelectorAll("main section[id]")
-];
-
-const navObserver=new IntersectionObserver(entries=>{
-
- entries.forEach(entry=>{
-
-   if(entry.isIntersecting){
-
-     navAnchors.forEach(a=>{
-
-       a.classList.toggle(
-         "active",
-         a.getAttribute("href")==="#"+entry.target.id
-       );
-
-     });
-
-   }
-
- });
-
-},{
- rootMargin:"-35% 0px -55% 0px"
-});
-
-sections.forEach(s=>{
-  navObserver.observe(s);
-});
-
-</script>
-
-</body>
-</html>
+   "Focused on
